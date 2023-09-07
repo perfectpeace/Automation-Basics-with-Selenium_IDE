@@ -3,8 +3,7 @@ Selenium IDE is a powerful tool for creating and running automated test scripts 
 
 **SCREENSHOTS**   <br>
 ![Screenshots](./Selenium_Screenshot.png). <br>
-![Screenshots](./Screenshot%202023-09-07%20090413.png).  <br>
-![Screenshots](./Screenshot%202023-09-07%20090755.png).  <br>
+
 ![Screenshots](./Screenshot%202023-09-07%20091043.png)  <br>
 ![Screenshots](./Screenshot%202023-09-07%20100243.png).  <br
 ![Screenshots](./Screenshot%202023-09-07%20104436.png).
