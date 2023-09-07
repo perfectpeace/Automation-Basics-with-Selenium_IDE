@@ -1,0 +1,667 @@
+{
+  "id": "d8d73e13-c894-4486-b98f-94d5d014d295",
+  "version": "2.0",
+  "name": "Selenium Assignment",
+  "url": "https://www.loctechng.com/",
+  "tests": [{
+    "id": "3e66dcd0-f442-42b7-9d99-d73fbf884c0b",
+    "name": "Verify that users can Register",
+    "commands": [{
+      "id": "7b098bf9-8e73-4c7d-bb1f-7fe0019855e5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4f52e31-afc1-4b14-9b78-276a022ffb4e",
+      "comment": "",
+      "command": "click",
+      "target": "//button[contains(text(), \"Register now\")]",
+      "targets": [],
+      "value": "Register now"
+    }, {
+      "id": "f02b33af-a30f-4ead-8e59-46054885ae06",
+      "comment": "",
+      "command": "type",
+      "target": "id=text",
+      "targets": [
+        ["id=text", "id"],
+        ["name=fullName", "name"],
+        ["css=#text", "css:finder"],
+        ["xpath=//input[@id='text']", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "Perfect"
+    }, {
+      "id": "f69cd681-1cc2-42e7-b5d6-cb338c1c47fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "perfectpeace5@gmail.com"
+    }, {
+      "id": "43054de7-3cbf-4c76-87c6-02bc4d659e3a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.grid:nth-child(3) > .font-medium",
+      "targets": [
+        ["css=.grid:nth-child(3) > .font-medium", "css:finder"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Phone Number')]", "xpath:innerText"]
+      ],
+      "value": "Phone Number"
+    }, {
+      "id": "a24967eb-b5b0-4e63-bbfa-5de42031cfa2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=div:nth-child(4) > .leading-none",
+      "targets": [
+        ["css=div:nth-child(4) > .leading-none", "css:finder"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Exam Batch')]", "xpath:innerText"]
+      ],
+      "value": "Exam Batch"
+    }, {
+      "id": "3bf694b3-54cf-4d65-ad32-1915cadfbc08",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[16]",
+      "targets": [
+        ["css=.grid:nth-child(5) > .flex", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Select Location')]", "xpath:innerText"]
+      ],
+      "value": "Select Location"
+    }, {
+      "id": "beabdbf1-dcbc-4e3f-9171-30f0a3794ab3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.grid:nth-child(6) > .flex",
+      "targets": [
+        ["css=.grid:nth-child(6) > .flex", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//div[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Select a course')]", "xpath:innerText"]
+      ],
+      "value": "Select a course"
+    }, {
+      "id": "490a117c-24d8-421c-be9e-add4c1f12937",
+      "comment": "",
+      "command": "check",
+      "target": "xpath=//input[@name='time']",
+      "targets": [
+        ["name=time", "name"],
+        ["css=.gap-3:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//input[@name='time']", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "731f3e4c-55a1-4bb9-bd92-f28400c4dec8",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='radix-:r0:']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "perfectpeace5@gmail.com"
+    }]
+  }, {
+    "id": "5471e0bf-c6e4-4af9-a4d5-5dd0a975d2e3",
+    "name": "Verify that all features of the Home page functions well",
+    "commands": [{
+      "id": "17253efc-b7a0-4997-854e-1f9293de95ec",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6efa8b1-46f7-438c-8e87-067cf30d2b45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.grid:nth-child(1) .mt-4 > .inline-flex",
+      "targets": [
+        ["css=.grid:nth-child(1) .mt-4 > .inline-flex", "css:finder"],
+        ["xpath=//div[4]/div/div[2]/div/div/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Courses')]", "xpath:innerText"]
+      ],
+      "value": "View Courses"
+    }, {
+      "id": "8b1cccbf-9f9f-4414-b2ce-ee7ce7b29d4e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Loctech Training Institution",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a29f2e67-ce3f-4c7d-8afe-35af2129f532",
+      "comment": "",
+      "command": "type",
+      "target": "css=.outline-none",
+      "targets": [
+        ["css=.outline-none", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "QA Engineer"
+    }, {
+      "id": "0e32b8a0-d204-4da5-96d3-2ce28ad28851",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.grid:nth-child(2) .inline-flex",
+      "targets": [
+        ["css=.grid:nth-child(2) .inline-flex", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca20ddbb-5e14-4011-91a5-552a1cd04b21",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.grid:nth-child(1) .mt-4 > .inline-flex",
+      "targets": [
+        ["css=.grid:nth-child(1) .mt-4 > .inline-flex", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Courses')]", "xpath:innerText"]
+      ],
+      "value": "View Courses"
+    }, {
+      "id": "d74bc0bf-a85f-46ff-bb79-9ddb3c91a24c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/div[2]/div/div/a/button",
+      "targets": [
+        ["css=.grid:nth-child(1) .mt-4 > .inline-flex", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/div/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'View Courses')]", "xpath:innerText"]
+      ],
+      "value": "View Courses"
+    }, {
+      "id": "3034c81e-0ee0-4d90-afa5-92e8bae836c2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.outline-none",
+      "targets": [
+        ["css=.outline-none", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "QA Engineer"
+    }, {
+      "id": "2a1b8bbc-2edf-4fd3-b370-7764b4155bc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div[2]/div/div/img",
+      "targets": [
+        ["css=.w-6:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='seacrh icon']", "xpath:img"],
+        ["xpath=//div[2]/div[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a688477-aed0-4b99-be9a-4317cbb11906",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.lg\\3Atext-5xl",
+      "targets": [
+        ["css=.lg\\3Atext-5xl", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Level up your skills with expert knowledge.')]", "xpath:innerText"]
+      ],
+      "value": "Level up your skills with expert knowledge"
+    }]
+  }, {
+    "id": "16b2b180-2d71-4211-a01c-e72f31368098",
+    "name": "Verify that users can Login",
+    "commands": [{
+      "id": "f132ee81-7873-4933-9149-69b3e4a26db3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "106152f6-a0f3-46ab-8a66-d86c17436ff1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/button",
+      "targets": [
+        ["css=.w-full > .border", "css:finder"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "9bb5ff15-2b47-4ac7-9b62-7a82a79ca924",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c59640be-6a55-461e-b903-f5dfd679d329",
+      "comment": "",
+      "command": "type",
+      "target": "css=.gap-3:nth-child(1) > .flex",
+      "targets": [
+        ["css=.gap-3:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "perfectpeace5@gmail.com"
+    }, {
+      "id": "ae768ad3-710b-44d3-be79-b89eed91fd31",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.gap-3:nth-child(2) > .flex",
+      "targets": [],
+      "value": "Password"
+    }, {
+      "id": "a6724b67-189a-4330-b242-c04b5df0f4c3",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//div[2]/input",
+      "targets": [
+        ["css=.gap-3:nth-child(2) > .flex", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Password"
+    }, {
+      "id": "dff189e7-19e4-4980-aee4-c14224b842a6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.gap-3:nth-child(2) > .flex",
+      "targets": [
+        ["css=.gap-3:nth-child(2) > .flex", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Shal_36"
+    }, {
+      "id": "6704b9c8-6c8b-4047-8b77-60914ed4c113",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.gap-3:nth-child(2) > .flex",
+      "targets": [
+        ["css=.gap-3:nth-child(2) > .flex", "css:finder"],
+        ["xpath=//input[@value='Shal_36']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Shal_36"
+    }, {
+      "id": "511da49b-e93f-4b22-9663-3c8e9c53ab6f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=terms",
+      "targets": [
+        ["id=terms", "id"],
+        ["css=#terms", "css:finder"],
+        ["xpath=//button[@id='terms']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7918c82c-5abf-4666-b0ae-662f21cd8cfd",
+      "comment": "",
+      "command": "submit",
+      "target": "xpath=//form/button",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": "Sign in"
+    }, {
+      "id": "b1b578eb-74c9-42c6-ba64-bf5d98adf970",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.peer-disabled\\3A cursor-not-allowed:nth-child(3)",
+      "targets": [
+        ["css=.peer-disabled\\3A cursor-not-allowed:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'You agree to our friendly privacy policy.')]", "xpath:innerText"]
+      ],
+      "value": "You agree to our friendly privacy policy."
+    }]
+  }, {
+    "id": "9af5440e-597c-4203-be77-6c264b4e0672",
+    "name": "Check  features on Navbar-Negative test 2",
+    "commands": [{
+      "id": "03acca90-9fd0-4d5c-812d-0e760c8155e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9baf1380-e108-4287-aef0-ffc876dd1be1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=radix-:R76mda:-trigger-radix-:Rdn6mda:",
+      "targets": [
+        ["id=radix-:R76mda:-trigger-radix-:Rdn6mda:", "id"],
+        ["css=#radix-\\3AR76mda\\3A-trigger-radix-\\3ARdn6mda\\3A", "css:finder"],
+        ["xpath=//button[@id='radix-:R76mda:-trigger-radix-:Rdn6mda:']", "xpath:attributes"],
+        ["xpath=//li[3]/button", "xpath:position"]
+      ],
+      "value": "Courses"
+    }, {
+      "id": "81627859-0904-4e8b-af6e-6753923a38c0",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=View all courses",
+      "targets": [
+        ["linkText=View all courses", "linkText"],
+        ["css=.flex-row:nth-child(2) > .flex > .flex", "css:finder"],
+        ["xpath=//a[contains(text(),'View all courses')]", "xpath:link"],
+        ["xpath=//div[@id='radix-:R76mda:-content-radix-:Rdn6mda:']/div/div[2]/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/courses')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all courses')]", "xpath:innerText"]
+      ],
+      "value": "View all courses"
+    }, {
+      "id": "2d528b6e-145d-44d7-8e1e-9990cdfd08c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=#radix-\\3Ar4\\3A-trigger-radix-\\3Ar7\\3A > .text-base-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//button[@id='radix-:r4:-trigger-radix-:r7:']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": "Courses"
+    }, {
+      "id": "539c722c-4185-4c26-bcb2-798e7f2c9428",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex:nth-child(2) > .gap-1 > .text-base",
+      "targets": [
+        ["css=.flex:nth-child(2) > .gap-1 > .text-base", "css:finder"],
+        ["xpath=//div[@id='radix-:r4:-content-radix-:r7:']/div/div[2]/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Programming')]", "xpath:innerText"]
+      ],
+      "value": "Programming"
+    }, {
+      "id": "ba16e5ff-0f13-4f92-8eca-a673d4a77358",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.flex-row > .border",
+      "targets": [
+        ["css=.flex-row > .border", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Enter your email"
+    }, {
+      "id": "6e8d75ec-56e0-436c-8dc0-725365316ad8",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.w-200",
+      "targets": [
+        ["css=.w-20", "css:finder"],
+        ["xpath=(//img[@alt='logo'])[2]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d87010-6860-4c6e-9642-e6c862ebb276",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//div/div[2]",
+      "targets": [
+        ["css=.md\\3Apx-12:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33f76bc6-fbbf-41a4-b6dc-4e640da08489",
+      "comment": "",
+      "command": "verifyNotEditable",
+      "target": "css=.gap-4:nth-child(1) > .w-full",
+      "targets": [
+        ["css=.gap-4:nth-child(1) > .w-full", "css:finder"],
+        ["xpath=//img[@alt='Web development with python and Django']", "xpath:img"],
+        ["xpath=//div[@id='radix-:ra:-content-all']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc949288-d8bf-4c3a-a2a9-406c6c2274ce",
+    "name": "Check  Navbar-Negative test 1",
+    "commands": [{
+      "id": "9add8fc3-b92b-4709-a023-4b23c4afa99c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad56d51-4837-432b-b559-5895047ec2bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=#radix-\\3Ar4\\3A-trigger-radix-\\3Ar7\\3A > .text-base-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//button[@id='radix-:r4:-trigger-radix-:r7:']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": "Courses"
+    }, {
+      "id": "36d8ea56-0d52-4257-bae4-7eb1820ce495",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=View all courses",
+      "targets": [
+        ["linkText=View all courses", "linkText"],
+        ["css=.flex-row:nth-child(2) > .flex > .flex", "css:finder"],
+        ["xpath=//a[contains(text(),'View all courses')]", "xpath:link"],
+        ["xpath=//div[@id='radix-:R76mda:-content-radix-:Rdn6mda:']/div/div[2]/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/courses')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all courses')]", "xpath:innerText"]
+      ],
+      "value": "View all courses"
+    }, {
+      "id": "fdc6b8de-36ff-4473-8944-8a1290c271f7",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.w-200",
+      "targets": [
+        ["css=.w-20", "css:finder"],
+        ["xpath=(//img[@alt='logo'])[2]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "672559fe-3829-48d4-96b6-8e322f4e72d6",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.flex-row > .border",
+      "targets": [
+        ["css=.flex-row > .border", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Enter your email"
+    }, {
+      "id": "b0bc87e4-042b-479b-ace7-29e8d951fa4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex:nth-child(2) > .gap-1 > .text-base",
+      "targets": [
+        ["css=.flex:nth-child(2) > .gap-1 > .text-base", "css:finder"],
+        ["xpath=//div[@id='radix-:r4:-content-radix-:r7:']/div/div[2]/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Programming')]", "xpath:innerText"]
+      ],
+      "value": "Programming"
+    }, {
+      "id": "c9681cef-3a86-4919-8929-fc4f951a3588",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//div/div[2]",
+      "targets": [
+        ["css=.md\\3Apx-12:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d741ac0-1cc4-4c08-bf9b-79115f1ba3e9",
+      "comment": "",
+      "command": "verifyNotEditable",
+      "target": "css=.gap-4:nth-child(1) > .w-full",
+      "targets": [
+        ["css=.gap-4:nth-child(1) > .w-full", "css:finder"],
+        ["xpath=//img[@alt='Web development with python and Django']", "xpath:img"],
+        ["xpath=//div[@id='radix-:ra:-content-all']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a22efdb3-8a9a-4bd7-af40-a5e061f32c5a",
+    "name": "Check  Navbar 2- negative test 3",
+    "commands": [{
+      "id": "fa10afa1-dfbc-4927-a8e6-e074413c31a2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.loctechng.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "470d7ec6-14f7-4246-b1e7-faff49e085aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#radix-\\3Ar4\\3A-trigger-radix-\\3Ar7\\3A > .text-base-color",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=#radix-\\3Ar4\\3A-trigger-radix-\\3Ar7\\3A > .text-base-color", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//button[@id='radix-:r4:-trigger-radix-:r7:']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": "Courses"
+    }, {
+      "id": "7544b7a7-0abe-48d2-846f-6759f853e119",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=View all courses",
+      "targets": [
+        ["linkText=View all courses", "linkText"],
+        ["css=.flex-row:nth-child(2) > .flex > .flex", "css:finder"],
+        ["xpath=//a[contains(text(),'View all courses')]", "xpath:link"],
+        ["xpath=//div[@id='radix-:R76mda:-content-radix-:Rdn6mda:']/div/div[2]/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/courses')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View all courses')]", "xpath:innerText"]
+      ],
+      "value": "View all courses"
+    }, {
+      "id": "f24fda67-258f-46d2-89d5-b26abca53769",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//a/imgg",
+      "targets": [
+        ["css=.w-20", "css:finder"],
+        ["xpath=(//img[@alt='logo'])[2]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f49ba8cc-86a0-4548-8ae4-58c97caa9a2c",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.flex-row > .border",
+      "targets": [
+        ["css=.flex-row > .border", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Enter your email"
+    }, {
+      "id": "27fa37f3-549d-41fa-aa1b-c20aedaf19c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex:nth-child(2) > .gap-1 > .text-base",
+      "targets": [
+        ["css=.flex:nth-child(2) > .gap-1 > .text-base", "css:finder"],
+        ["xpath=//div[@id='radix-:r4:-content-radix-:r7:']/div/div[2]/div[2]/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Programming')]", "xpath:innerText"]
+      ],
+      "value": "Programming"
+    }, {
+      "id": "b1509c36-4000-426b-9a35-adc767c9166f",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//div/div[2]",
+      "targets": [
+        ["css=.md\\3Apx-12:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7056d3a2-88d4-46b4-8b0f-e5091f94ebbf",
+      "comment": "",
+      "command": "verifyNotEditable",
+      "target": "xpath=//div[3]/div[2]/div/div/div/img",
+      "targets": [
+        ["css=.gap-4:nth-child(1) > .w-full", "css:finder"],
+        ["xpath=//img[@alt='Web development with python and Django']", "xpath:img"],
+        ["xpath=//div[@id='radix-:ra:-content-all']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d73d631-6012-4062-b43e-9cfc5fd099f4",
+    "name": "Assignment_Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3e66dcd0-f442-42b7-9d99-d73fbf884c0b"]
+  }, {
+    "id": "55197530-3c45-43f4-9c65-9b40f66418e9",
+    "name": "Negative test",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.loctechng.com/"],
+  "plugins": []
+}
